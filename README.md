@@ -28,6 +28,10 @@ cd MetaCurator-1.0beta.1/TestMetaCurator
 MetaCurator.py -r rbcL_Reps.fa -i rbcL_sample.fa -it rbcL_sample.tax -tf True -ct True -of Test.fa -ot Test.tax --SaveTemp True 2> rbcL_log.txt
 ```
 
+### Usage
+A general workflow for using MetaCurator is available at the following link:
+https://github.com/RTRichar/MetabarcodeDBsV2/blob/master/Workflow.md
+* if you're running MetaCurator on a fasta file with sequences that are split over multiple lines (such as the default NCBI download format), you'll need to concatenate lintes into continuous sequences as decribed through the link above 
 ### Citation and further information
 Richardson, RT, DB Sponsler, H McMinn-Sauder & RM Johnson. (2019). MetaCurator: A hidden Markov model-based toolkit for extracting and curating sequences from taxonomically-informative genetic markers. *Methods in Ecology and Evolution*. https://doi.org/10.1111/2041-210X.13314
 
