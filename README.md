@@ -16,8 +16,8 @@ MAFFT 7.270 or compatible
 ### Installation
 Download and unpack tarfile of current release
 ```
-wget https://github.com/RTRichar/MetaCurator/releases/tag/v1.0.1/MetaCurator-1.0.1.tar.gz
-tar xzf MetaCurator-1.0.1.tar.gz  
+wget https://github.com/RTRichar/MetaCurator/archive/v1.0.1.tar.gz
+tar xzvf v1.0.1.tar.gz 
 ```
 After unpacking, export the MetaCurator directory to $PATH if you're using a local machine, or add the directory path to the appropriate login configuration file if you are using a remote cluster
 
