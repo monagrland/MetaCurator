@@ -18,6 +18,10 @@ with open(args.InputFile, 'r') as InFile:
 
 with open(args.OutputFile, 'w') as OutFile:
 	for key in LinDct:
-		L = str('k__' + LinDct[key][0] + ';p__' + LinDct[key][1] + ';c__' + LinDct[key][2] + ';o__' + LinDct[key][3] + \
-			';f__' + LinDct[key][4] + ';g__' + LinDct[key][5] + ';s__' + LinDct[key][6])
-		OutFile.write(str(key) + '\t' + L + '\n')
+		try:
+			L = str('k__' + LinDct[key][0] + ';p__' + LinDct[key][1] + ';c__' + LinDct[key][2] + ';o__' + LinDct[key][3] + \
+				';f__' + LinDct[key][4] + ';g__' + LinDct[key][5] + ';s__' + LinDct[key][6])
+			OutFile.write(str(key) + '\t' + L + '\n')
+		except:
+			print("ERROR")
+			print(LinDct[key])
